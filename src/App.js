@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from './Home';
-import { CvData } from './CvData';
+import { Resume } from './Resume';
 import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
@@ -17,20 +17,19 @@ function App() {
   return (
     <React.Fragment>
       <NavigationBar />
-        <Layout>
-          <Jumbotron />
-            <BrowserRouter>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/resume" component={CvData}/> */}
+      <Layout>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/resume" component={Resume} /> */}
                 <Route path="/contact" component={Contact} />
-                <Route path="/blog" component={() => {
-                  window.location.href = "https://tasospardalis.com/blog"
-                }} />
-                <Route component={NoMatch} />
-              </Switch>
-            </BrowserRouter>
-        </Layout>
+            <Route path="/blog" component={() => {
+              window.location.href = "https://tasospardalis.com/blog"
+            }} />
+            <Route component={NoMatch} />
+          </Switch>
+        </BrowserRouter>
+      </Layout>
     </React.Fragment>
   );
 }
