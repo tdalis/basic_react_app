@@ -14,11 +14,12 @@ const Styles = styled.div`
             color: white;
         }
     }
+    
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar expand="lg">
+        <Navbar expand="lg" bg = "dark" variant = "dark">
             <Navbar.Brand href="/">Tasos Pardalis</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
