@@ -12,6 +12,8 @@ import { InternDS } from './components/../InternDS';
 import { MarketingConsultant } from './components/../MarketingConsultant';
 import { Groupmates } from './components/../Groupmates';
 import { SkillsProgress } from './components/../SkillsProgress';
+import { StirlingUni } from './components/../StirlingUni';
+import { RobertGordon } from './components/../RobertGordon';
 
 const Styles = styled.div`
     .cvJumbo {
@@ -23,48 +25,69 @@ export const CvJumbotron = () => (
     <Styles>
         <Jumbo fluid className="cvJumbo">
             <Container>
+                <Row className="text-center">
+                    <h3><strong>Deriving Business Value from Data</strong></h3>
+                </Row>
                 <Row>
-                    <Accordion defaultActiveKey="1">
+                    <Accordion defaultActiveKey="0">
                         <Row>
                             <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                 <h2><Badge variant="primary">Work Experience</Badge></h2>
                             </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="0">
-                                <BusinessAnalyst />
-                            </Accordion.Collapse>
-                            <Accordion.Collapse eventKey="0">
-                                <DataScientist />
-                            </Accordion.Collapse>
-                            <Accordion.Collapse eventKey="0">
-                                <InternDS />
-                            </Accordion.Collapse>
-                            <Accordion.Collapse eventKey="0">
-                                <MarketingConsultant />
-                            </Accordion.Collapse>
-                            <Accordion.Collapse eventKey="0">
-                                <Groupmates />
-                            </Accordion.Collapse>
+                            <Container fluid>
+                                <Row>
+                                    <Col>
+                                        <Accordion.Collapse eventKey="0">
+                                            <BusinessAnalyst />
+                                        </Accordion.Collapse>
+                                        <Accordion.Collapse eventKey="0">
+                                            <DataScientist />
+                                        </Accordion.Collapse>
+                                        <Accordion.Collapse eventKey="0">
+                                            <InternDS />
+                                        </Accordion.Collapse>
+                                        <Accordion.Collapse eventKey="0">
+                                            <MarketingConsultant />
+                                        </Accordion.Collapse>
+                                        <Accordion.Collapse eventKey="0">
+                                            <Groupmates />
+                                        </Accordion.Collapse>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </Row>
                         <Row >
                             <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                <h2><Badge variant="success">Skills</Badge></h2>
+                                <h2><Badge variant="success">Skills Progress</Badge></h2>
                             </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="1">
-                                <SkillsProgress />
-                            </Accordion.Collapse>
+                            <Container fluid>
+                                <Row>
+                                    <Col>
+                                        <Accordion.Collapse eventKey="1">
+                                            <SkillsProgress />
+                                        </Accordion.Collapse>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </Row>
                         <Row>
                             <Accordion.Toggle as={Button} variant="link" eventKey="2">
                                 <h2><Badge variant="secondary">Education</Badge></h2>
                             </Accordion.Toggle>
-                            <Accordion.Collapse eventKey="2">
-                                <LongStatement />
-                            </Accordion.Collapse>
+                            <Container fluid>
+                                <Row>
+                                    <Col>
+                                        <Accordion.Collapse eventKey="2">
+                                            <StirlingUni />
+                                        </Accordion.Collapse>
+                                        <Accordion.Collapse eventKey="2">
+                                            <RobertGordon />
+                                        </Accordion.Collapse>
+                                    </Col>
+                                </Row>
+                            </Container>
                         </Row>
                     </Accordion>
-                </Row>
-                <Row className="text-center">
-                    <h3><strong>Deriving Business Value from Data</strong></h3>
                 </Row>
             </Container>
         </Jumbo>

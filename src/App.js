@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from './Home';
 import { Resume } from './Resume';
 import { Contact } from './Contact';
-import { NoMatch } from './NoMatch';
+import { Projects } from './Projects';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
@@ -21,12 +21,9 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/resume" component={Resume} /> */}
-                <Route path="/contact" component={Contact} />
-            <Route path="/blog" component={() => {
-              window.location.href = "https://tasospardalis.com/blog"
-            }} />
-            <Route component={NoMatch} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
           </Switch>
         </BrowserRouter>
       </Layout>
