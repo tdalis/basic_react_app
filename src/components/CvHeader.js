@@ -1,17 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Container, Row, Col, Image, Figure, Card } from 'react-bootstrap';
+// import styled from 'styled-components';
+import { Container, Row, Col, Figure} from 'react-bootstrap';
 import tasosFace from './../assets/imgs/tasosFace.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './BasicStyles.modules.css';
-import tasosTaj from './../assets/imgs/tasosTaj.jpg';
-import { Jumbotron as Jumbo } from 'react-bootstrap';
+// import styles from './BasicStyles.modules.css';
+// import tasosTaj from './../assets/imgs/tasosTaj.jpg';
+// import { Jumbotron as Jumbo } from 'react-bootstrap';
 
-const Styles = styled.div`
+/* const Styles = styled.div`
   .tagLine {
     margin-bottom = 10px;
   }
-`;
+`; */
 
 export const CvHeader = () => (
   <Container fluid>

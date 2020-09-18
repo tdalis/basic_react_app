@@ -26,10 +26,10 @@ export const BusinessAnalyst = () => (
             <Row>
                 <Col>
                     <small>Sep 2019 - Apr 2020</small>
-                    <h2 className="JobHeader">Data Scientist (Business Analyst)</h2>
+                    <h2 className="JobHeader">Full-Stack Data Scientist</h2>
                     <h3>Reckitt Benckiser (RB)</h3>
                     <Row className="Place"><FontAwesomeIcon icon="map-marker" size="2x" /> <h4 className="Place">Heidelberg, Germany</h4></Row>
-                    <h4>Key Responsibilities:</h4> <p>Business Analytics, Data Collection, Data Validation, Web Scraping, PowerBi Dashboarding, Presenting Findings to Stakeholders</p>
+                    <h4>Key Responsibilities:</h4> <p>Business Analytics, Machine Learning, Data Collection, Data Validation, Web Scraping, PowerBi Dashboarding, Presenting Findings to Stakeholders</p>
                     <div className="Skills">
                     <Accordion defaultActiveKey="1">
                         <Accordion.Toggle as={Button} variant="link" eventKey="0">

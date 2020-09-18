@@ -29,10 +29,10 @@ export const Jumbotron = () => (
     <Styles>
         <Jumbo fluid className = "jumbo">
             <div className = "overlay"></div>
-            <container>
+            <Container>
                 <h1 className = "font-weight-bold text-center">Welcome</h1>
                 <p className = "font-weight-bold text-center">This is my first actual website using ReactJS and Bootstrap. Not bad, ha?</p>
-            </container>
+            </Container>
         </Jumbo>
     </Styles>
 )
